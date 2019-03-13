@@ -104,3 +104,4 @@ C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScann
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\obj\Debug\SpecFlowApiSkyScannerTests.csproj.CopyComplete
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\obj\Debug\SpecFlowAPINasaTests.dll
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\obj\Debug\SpecFlowAPINasaTests.pdb
+C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\obj\Debug\SpecFlowApiSkyScannerTests.csprojAssemblyReference.cache

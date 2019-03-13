@@ -16,8 +16,8 @@ namespace SpecFlowAPINasaTests.StepDefinitions
             _client = client;
         }
 
-        [StepDefinition(@"The data about quotes is correct")]
-        public void StepDefinitionTheDataIsCorrect()
+        [StepDefinition(@"The data (.*) about quotes is correct")]
+        public void StepDefinitionTheDataIsCorrect(double data)
         {
             var body = ApiTestContext.Response.Content.ReadAsStringAsync().Result;
             MyQuotes myQuotes = JsonConvert.DeserializeObject<MyQuotes>(body);
@@ -25,7 +25,7 @@ namespace SpecFlowAPINasaTests.StepDefinitions
             {
                 quote.OutboundLeg.OriginId.Should().Be(81727);
                 quote.OutboundLeg.DestinationId.Should().Be(60987);
-                quote.MinPrice.Should().Be(119.0);
+                quote.MinPrice.Should().Be(data);
             }
         }
     }

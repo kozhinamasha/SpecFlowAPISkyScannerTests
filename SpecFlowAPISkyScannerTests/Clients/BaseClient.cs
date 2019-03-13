@@ -1,6 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Runtime.Remoting.Messaging;
+using NUnit.Framework.Api;
+using NUnit.Framework.Internal;
 
 namespace SpecFlowApiSkyScannerTests.Infrastucture
 {
@@ -42,11 +47,10 @@ namespace SpecFlowApiSkyScannerTests.Infrastucture
 
         protected HttpResponseMessage Delete(string url)
         {
-            Console.WriteLine("Delete request: {0}",_client.BaseAddress + url);
+            Console.WriteLine("Delete request: {0}", _client.BaseAddress + url);
             HttpResponseMessage result = _client.DeleteAsync(_client.BaseAddress + url).Result;
             Console.WriteLine("Response body: {0}", result.Content.ReadAsStringAsync().Result);
             return result;
-            
         }
     }
 }

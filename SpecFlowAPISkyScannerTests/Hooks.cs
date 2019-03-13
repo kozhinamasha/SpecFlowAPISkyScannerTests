@@ -1,5 +1,6 @@
 ﻿using SpecFlowApiSkyScannerTests;
 using TechTalk.SpecFlow;
+using System.Configuration;
 
 namespace SpecFlowAPINasaTests
 {
