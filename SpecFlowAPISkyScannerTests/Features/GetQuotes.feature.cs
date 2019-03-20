@@ -19,20 +19,20 @@ namespace SpecFlowAPINasaTests.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("GetAirportsLists")]
-    public partial class GetAirportsListsFeature
+    [NUnit.Framework.DescriptionAttribute("GetQuotes")]
+    public partial class GetQuotesFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "GetAirportList.feature"
+#line 1 "GetQuotes.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "GetAirportsLists", "", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "GetQuotes", "", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -65,27 +65,21 @@ namespace SpecFlowAPINasaTests.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Get list of aiports for the country")]
+        [NUnit.Framework.DescriptionAttribute("Retrieve the cheapest quotes from prices")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        [NUnit.Framework.TestCaseAttribute("Stockholm", "Sweden", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("London", "t", "10", null)]
-        public virtual void GetListOfAiportsForTheCountry(string city, string country, string number, string[] exampleTags)
+        public virtual void RetrieveTheCheapestQuotesFromPrices()
         {
-            string[] @__tags = new string[] {
-                    "mytag"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get list of aiports for the country", @__tags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Retrieve the cheapest quotes from prices", new string[] {
+                        "mytag"});
 #line 4
 this.ScenarioSetup(scenarioInfo);
 #line 5
- testRunner.When(string.Format("I visit the path \"apiservices/autosuggest/v1.0/UK/GBP/en-GB/?query={0}\"", city), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I visit the path \"apiservices/browsequotes/v1.0/US/USD/en-US/SFO-sky/JFK-sky/2019" +
+                    "-04-01?inboundpartialdate=2019-01-01\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 6
  testRunner.Then("Status code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 7
- testRunner.And(string.Format("The number of the airports is {0}", number), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("The data 174.0 about quotes is correct", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

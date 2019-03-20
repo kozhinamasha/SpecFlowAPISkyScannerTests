@@ -19,20 +19,20 @@ namespace SpecFlowAPINasaTests.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("GetAirportsLists")]
-    public partial class GetAirportsListsFeature
+    [NUnit.Framework.DescriptionAttribute("GetMarketsList")]
+    public partial class GetMarketsListFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "GetAirportList.feature"
+#line 1 "GetMarketsList.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "GetAirportsLists", "", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "GetMarketsList", "", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -65,11 +65,10 @@ namespace SpecFlowAPINasaTests.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Get list of aiports for the country")]
+        [NUnit.Framework.DescriptionAttribute("Get list of markets")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        [NUnit.Framework.TestCaseAttribute("Stockholm", "Sweden", "5", null)]
-        [NUnit.Framework.TestCaseAttribute("London", "t", "10", null)]
-        public virtual void GetListOfAiportsForTheCountry(string city, string country, string number, string[] exampleTags)
+        [NUnit.Framework.TestCaseAttribute("234", null)]
+        public virtual void GetListOfMarkets(string number, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "mytag"};
@@ -77,15 +76,15 @@ namespace SpecFlowAPINasaTests.Features
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get list of aiports for the country", @__tags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get list of markets", @__tags);
 #line 4
 this.ScenarioSetup(scenarioInfo);
 #line 5
- testRunner.When(string.Format("I visit the path \"apiservices/autosuggest/v1.0/UK/GBP/en-GB/?query={0}\"", city), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I visit the path \"apiservices/reference/v1.0/countries/en-US\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 6
  testRunner.Then("Status code is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 7
- testRunner.And(string.Format("The number of the airports is {0}", number), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And(string.Format("I get a list of {0} countries", number), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

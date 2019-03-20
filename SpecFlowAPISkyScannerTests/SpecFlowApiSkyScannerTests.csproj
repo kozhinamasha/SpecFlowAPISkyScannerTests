@@ -102,6 +102,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GetAirportList.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\GetMarketsList.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetMarketsList.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\GetQuotes.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetQuotes.feature</DependentUpon>
+    </Compile>
     <Compile Include="Hooks.cs" />
     <Compile Include="Models\AllCountries.cs" />
     <Compile Include="Models\AllPlaces.cs" />
@@ -121,6 +131,14 @@
     <None Include="Features\GetAirportList.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GetAirportList.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\GetMarketsList.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GetMarketsList.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\GetQuotes.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GetQuotes.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

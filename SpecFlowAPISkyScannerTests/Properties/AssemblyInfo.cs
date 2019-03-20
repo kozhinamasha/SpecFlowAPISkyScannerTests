@@ -1,6 +1,7 @@
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using NUnit.Framework;
 
 [assembly: AssemblyTitle("SpecFlowAPINasaTests")]
 [assembly: AssemblyDescription("")]
@@ -10,6 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
+[assembly: Parallelizable(ParallelScope.Fixtures)]
 
 [assembly: ComVisible(false)]
 

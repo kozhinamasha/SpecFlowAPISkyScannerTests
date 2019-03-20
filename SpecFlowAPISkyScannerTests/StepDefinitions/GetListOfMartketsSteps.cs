@@ -1,10 +1,9 @@
-﻿using System.Diagnostics.PerformanceData;
+﻿using FluentAssertions;
 using Newtonsoft.Json;
+using SpecFlowAPINasaTests.Models;
 using SpecFlowApiSkyScannerTests;
 using SpecFlowApiSkyScannerTests.Infrastucture;
-using SpecFlowAPINasaTests.Models;
 using TechTalk.SpecFlow;
-using FluentAssertions;
 
 namespace SpecFlowAPINasaTests.StepDefinitions
 {
