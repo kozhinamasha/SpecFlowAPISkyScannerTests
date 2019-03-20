@@ -76,9 +76,6 @@ C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScann
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\SpecFlowAPINasaTests.dll.config
-C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\SpecFlowAPINasaTests.dll
-C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\SpecFlowAPINasaTests.pdb
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\FluentAssertions.dll
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\HttpClientExtensions.dll
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
@@ -100,8 +97,10 @@ C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScann
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\nunit.framework.xml
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\System.ValueTuple.xml
-C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\obj\Debug\SpecFlowApiSkyScannerTests.csprojAssemblyReference.cache
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\obj\Debug\SpecFlowApiSkyScannerTests.csproj.CoreCompileInputs.cache
 C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\obj\Debug\SpecFlowApiSkyScannerTests.csproj.CopyComplete
-C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\obj\Debug\SpecFlowAPINasaTests.dll
-C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\obj\Debug\SpecFlowAPINasaTests.pdb
+C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\SpecFlowApiSkyScannerTests.dll.config
+C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\SpecFlowApiSkyScannerTests.dll
+C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\bin\Debug\SpecFlowApiSkyScannerTests.pdb
+C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\obj\Debug\SpecFlowApiSkyScannerTests.dll
+C:\Users\mariia.kozhyna\Documents\SpecFlowAPISkyScannerTests\SpecFlowAPISkyScannerTests\obj\Debug\SpecFlowApiSkyScannerTests.pdb

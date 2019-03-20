@@ -9,8 +9,8 @@
     <ProjectGuid>{7AB43B76-0EE8-4409-959A-F6FBFF7E5D24}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SpecFlowAPINasaTests</RootNamespace>
-    <AssemblyName>SpecFlowAPINasaTests</AssemblyName>
+    <RootNamespace>SpecFlowApiSkyScannerTests</RootNamespace>
+    <AssemblyName>SpecFlowApiSkyScannerTests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
