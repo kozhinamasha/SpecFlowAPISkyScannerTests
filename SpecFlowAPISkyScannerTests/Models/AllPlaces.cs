@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-using NUnit.Framework;
+﻿using System.Collections.Generic;
 
 namespace SpecFlowApiSkyScannerTests
 {
@@ -11,7 +8,7 @@ namespace SpecFlowApiSkyScannerTests
     }
 
     public class Place
-    { 
+    {
         public string PlaceId { get; set; }
         public string PlaceName { get; set; }
         public string CountryId { get; set; }

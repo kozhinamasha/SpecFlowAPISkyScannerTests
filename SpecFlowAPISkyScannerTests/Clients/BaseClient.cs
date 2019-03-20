@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Runtime.Remoting.Messaging;
-using NUnit.Framework.Api;
-using NUnit.Framework.Internal;
 
 namespace SpecFlowApiSkyScannerTests.Infrastucture
 {
@@ -27,8 +22,8 @@ namespace SpecFlowApiSkyScannerTests.Infrastucture
             Console.WriteLine("Response body: {0}", result.Content.ReadAsStringAsync().Result);
             return result;
         }
-       
-        protected HttpResponseMessage Post(string url,object body)
+
+        protected HttpResponseMessage Post(string url, object body)
         {
             Console.WriteLine("Post request: {0}", _client.BaseAddress + url);
             Console.WriteLine("Send body: {0}", body);

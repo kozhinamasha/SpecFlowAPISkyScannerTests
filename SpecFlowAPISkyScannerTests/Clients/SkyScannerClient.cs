@@ -3,13 +3,15 @@ using System.Net.Http;
 
 namespace SpecFlowApiSkyScannerTests.Infrastucture
 {
-    public class SkyScannerClient:BaseClient
+    public class SkyScannerClient : BaseClient
     {
-        public SkyScannerClient() : base(new HttpClient
+        private ApiTestContext _context;
+        public SkyScannerClient(ApiTestContext context) : base(new HttpClient
         {
-            BaseAddress = new Uri(ApiTestContext.ApiUrl)
+            BaseAddress = new Uri("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com")
         })
         {
+            _context = context;
         }
 
         public HttpResponseMessage VisitPath(string url)

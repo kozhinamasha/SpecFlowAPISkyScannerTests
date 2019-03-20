@@ -1,6 +1,5 @@
 ﻿using SpecFlowApiSkyScannerTests;
 using TechTalk.SpecFlow;
-using System.Configuration;
 
 namespace SpecFlowAPINasaTests
 {
@@ -11,10 +10,13 @@ namespace SpecFlowAPINasaTests
         {
         }
 
+        private ApiTestContext _context;
+
         [BeforeScenario]
         public void SetUp()
         {
-            ApiTestContext.ApiUrl = "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com";
+            _context = new ApiTestContext();
+            _context.ApiUrl = "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com";
         }
     }
 }

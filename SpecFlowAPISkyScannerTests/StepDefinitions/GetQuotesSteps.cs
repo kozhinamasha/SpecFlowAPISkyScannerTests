@@ -10,16 +10,18 @@ namespace SpecFlowAPINasaTests.StepDefinitions
     public class GetQuotesSteps
     {
         private SkyScannerClient _client;
+        private ApiTestContext _context;
 
-        public GetQuotesSteps(SkyScannerClient client)
+        public GetQuotesSteps(SkyScannerClient client, ApiTestContext context)
         {
             _client = client;
+            _context = context;
         }
 
         [StepDefinition(@"The data (.*) about quotes is correct")]
         public void StepDefinitionTheDataIsCorrect(double data)
         {
-            var body = ApiTestContext.Response.Content.ReadAsStringAsync().Result;
+            var body = _context.Response.Content.ReadAsStringAsync().Result;
             MyQuotes myQuotes = JsonConvert.DeserializeObject<MyQuotes>(body);
             foreach (var quote in myQuotes.Quotes)
             {

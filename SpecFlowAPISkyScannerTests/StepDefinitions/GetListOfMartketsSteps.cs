@@ -11,19 +11,26 @@ namespace SpecFlowAPINasaTests.StepDefinitions
     public class GetListOfMartketsSteps
     {
         private SkyScannerClient _client;
+        private ApiTestContext _context;
 
-        public GetListOfMartketsSteps(SkyScannerClient client)
+        public GetListOfMartketsSteps(SkyScannerClient client, ApiTestContext context)
         {
             _client = client;
+            _context = context;
         }
 
         [StepDefinition(@"I get a list of (.*) countries")]
         public void IGetAListOfCountries(int number)
         {
-            var body = ApiTestContext.Response.Content.ReadAsStringAsync().Result;
-            AllCountries countries = JsonConvert.DeserializeObject<AllCountries>(body);
-            countries.Countries.Count.Should().Be(number);
-            foreach (var country in countries.Countries)
+            var body = _context.Response.Content.ReadAsStringAsync().Result;
+            _context.Countries = JsonConvert.DeserializeObject<AllCountries>(body);
+            _context.Countries.Countries.Count.Should().Be(number);
+        }
+
+        [StepDefinition(@"I see country name and code")]
+        public void ISeeCountryNameAndCode()
+        {
+            foreach (var country in _context.Countries.Countries)
             {
                 country.Code.Should().NotBeNullOrEmpty();
                 country.Name.Should().NotBeNullOrEmpty();

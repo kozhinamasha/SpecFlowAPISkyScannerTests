@@ -1,10 +1,12 @@
 ﻿using System.Net.Http;
+using SpecFlowAPINasaTests.Models;
 
 namespace SpecFlowApiSkyScannerTests
 {
-    public static class ApiTestContext
+    public class ApiTestContext
     {
-        public static  string ApiUrl { get; set; }
-        public static HttpResponseMessage Response { get; set; }
+        public string ApiUrl { get; set; }
+        public HttpResponseMessage Response { get; set; }
+        public AllCountries Countries { get; set; }
     }
 }
